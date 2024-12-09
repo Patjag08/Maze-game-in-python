@@ -160,3 +160,14 @@ def print_maze(maze):
         for j in range(27):
             lane_to_print += maze[i][j]
         print(lane_to_print)
+
+def display_maze(maze):
+    total = []
+    for i in range(27):
+        lane_to_print = ""
+        for j in range(11):
+            lane_to_print += maze[j][i]
+            lane_to_print += "\n"
+        total.append(lane_to_print)
+    return total
+    
